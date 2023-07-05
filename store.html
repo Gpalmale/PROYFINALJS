@@ -10,132 +10,54 @@
 		<title>Productos</title>
 		<link rel="stylesheet" href="sass/style.css" />
 	</head>
-	<body class="store">
-		<header >
-			<h1>Productos</h1>
-
-			<div class="container-icon">
-				<div class="container-cart-icon">
-					<svg
-						xmlns="http://www.w3.org/2000/svg"
-						fill="none"
-						viewBox="0 0 24 24"
-						stroke-width="1.5"
-						stroke="currentColor"
-						class="icon-cart"
-					>
-						<path
-							stroke-linecap="round"
-							stroke-linejoin="round"
-							d="M15.75 10.5V6a3.75 3.75 0 10-7.5 0v4.5m11.356-1.993l1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 01-1.12-1.243l1.264-12A1.125 1.125 0 015.513 7.5h12.974c.576 0 1.059.435 1.119 1.007zM8.625 10.5a.375.375 0 11-.75 0 .375.375 0 01.75 0zm7.5 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z"
-						/>
-					</svg>
-					<div class="count-products">
-						<span id="contador-productos">0</span>
-					</div>
-				</div>
-
-				<div class="container-cart-products hidden-cart">
-					<div class="row-product hidden">
-						<div class="cart-product">
-							<div class="info-cart-product">
-								<span class="cantidad-producto-carrito">1</span>
-								<p class="titulo-producto-carrito">Zapatos Nike</p>
-								<span class="precio-producto-carrito">$80</span>
-							</div>
-							<svg
-								xmlns="http://www.w3.org/2000/svg"
-								fill="none"
-								viewBox="0 0 24 24"
-								stroke-width="1.5"
-								stroke="currentColor"
-								class="icon-close"
-							>
-								<path
-									stroke-linecap="round"
-									stroke-linejoin="round"
-									d="M6 18L18 6M6 6l12 12"
-								/>
-							</svg>
-						</div>
-					</div>
-
-					<div class="cart-total hidden">
-						<h3>Total:</h3>
-						<span class="total-pagar">$200</span>
-					</div>
-					<p class="cart-empty">El carrito está vacío</p>
-				</div>
-			</div>
-		</header>
-		<div class="container-items">
-			<div class="item">
-				<figure>
-					<img
-						src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
-						alt="producto"
-					/>
-				</figure>
-				<div class="info-product">
-					<h2>Zapatos Nike</h2>
-					<p class="price">$80</p>
-					<button class="btn-add-cart">Añadir al carrito</button>
-				</div>
-			</div>
-			<div class="item">
-				<figure>
-					<img
-						src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
-						alt="producto"
-					/>
-				</figure>
-				<div class="info-product">
-					<h2>Audifonos</h2>
-					<p class="price">$20</p>
-					<button class="btn-add-cart">Añadir al carrito</button>
-				</div>
-			</div>
-			<div class="item">
-				<figure>
-					<img
-						src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1099&q=80"
-						alt="producto"
-					/>
-				</figure>
-				<div class="info-product">
-					<h2>Reloj</h2>
-					<p class="price">$50</p>
-					<button class="btn-add-cart">Añadir al carrito</button>
-				</div>
-			</div>
-			<div class="item">
-				<figure>
-					<img
-						src="https://images.unsplash.com/photo-1546868871-7041f2a55e12?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=764&q=80"
-						alt="producto"
-					/>
-				</figure>
-				<div class="info-product">
-					<h2>Smartwatch</h2>
-					<p class="price">$90</p>
-					<button class="btn-add-cart">Añadir al carrito</button>
-				</div>
-			</div>
-			<div class="item">
-				<figure>
-					<img
-						src="https://images.unsplash.com/photo-1585386959984-a4155224a1ad?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80"
-						alt="producto"
-					/>
-				</figure>
-				<div class="info-product">
-					<h2>Perfume</h2>
-					<p class="price">$50</p>
-					<button class="btn-add-cart">Añadir al carrito</button>
-				</div>
-			</div>
-		</div>
-
-		<script src="index.js"></script>
-	</body>
+	<body>
+		<!-- Main content -->
+		<main class="container">
+		  <!-- Header -->
+		  <header class="header">
+			<a href="#" class="logo">
+			  <img class="logo__img" src="img/logo.svg" alt="Banco">
+			  
+			</a>
+	  
+			<nav class="menu">
+			  <ul class="menu-list">
+				<li class="menu-list__item"><a href="#">Home</a></li>
+				<li class="menu-list__item"><a href="#">Inversiones</a></li>
+				<li class="menu-list__item"><a href="conversor.html">Conversor</a></li>
+				<li class="menu-list__item"><a href="#">Contacto</a></li>
+				<li class="menu-list__item"><a class="catalogue" href="store.html">Más información</a></li>
+			  </ul>
+			</nav>
+		  </header>
+	  
+		  <!-- Content -->
+		  <article class="content">
+			<a class="slideButton prevSlide"><i class="fa fa-left-long"></i></a>
+			<a class="slideButton nextSlide"><i class="fa fa-right-long"></i></a>
+			<h1 class="content__claim">Tú Banco</h1>
+			<h2 class="content__subclaim">Visita Nuestra Sucursal Virtual</h2>
+			<a class="catalogue" href="store.html">Más información</a>
+		  </article>
+	  
+		  <!-- Footer -->
+		  <div class="footer-wrapper">
+			<footer class="footer">
+			  <section class="footer__widget">
+				<h3 class="footer__widget__title">Dirección</h3>
+				<p class="footer__widget__text">Sinfonia 100, Santiago Región Metropolitana</p>
+			  </section>
+			  <section class="footer__widget">
+				<h3 class="footer__widget__title">Telefono</h3>
+				<p class="footer__widget__text">+56 962 343 519  </p>
+			  </section>
+			  <section class="footer__widget">
+				<h3 class="footer__widget__title">Email</h3>
+				<p class="footer__widget__text">gpalmale89@gmail.com</p>
+			  </section>
+			</footer>
+		  </div>
+		</main>
+	  
+	  </body>
 </html>
