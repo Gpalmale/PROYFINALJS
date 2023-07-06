@@ -36,47 +36,36 @@
     </header>
 
     <!-- Content -->
-    <article class="contentstore">
-		<div class="item">
-			<figure>
-				<img
-					src= "img/Bolsa.jpg"
-					alt="producto"
-				/>
-			</figure>
-			<div class="info-product">
-				<h2>Acciones</h2>
-				<p class="price">CLP/USD/EUR</p>
-				<button class="btn-add-cart">Contacto Ejecutivo</button>
-			</div>
-		</div>
-		<div class="item">
-			<figure>
-				<img
-					src="img/Cripto.jpg"
-					alt="producto"
-				/>
-			</figure>
-			<div class="info-product">
-				<h2>Criptomonedas</h2>
-				<p class="price">BTC/ETH/ADA</p>
-				<button class="btn-add-cart">Contacto Ejecutivo</button>
-			</div>
-		</div>
-		<div class="item">
-			<figure>
-				<img
-					src="img/Hipotecario.jpg"
-					alt="producto"
-				/>
-			</figure>
-			<div class="info-product">
-				<h2>Prestamos</h2>
-				<p class="price">Hipotecario/Prestamo de Consumo/Prestamo Automotriz</p>
-				<button class="btn-add-cart">Contacto Ejecutivo</button>
-			</div>
-		</div>
-		
+    <article class="content">
+      <a class="slideButton prevSlide"><i class="fa fa-left-long"></i></a>
+      <a class="slideButton nextSlide"><i class="fa fa-right-long"></i></a>
+      <h1 class="content__claim">¡Contáctanos para obtener más información!</h1>
+      <h2 class="content__subclaim">Teléfono: +569 623 42 519<</h2>
+      <a class="catalogue" href="#">Email: gpalmale89@gmail.com</a>
+      
+      <div class="contact-form">
+        <h2>Contacto</h2>
+        <form action="send_email.php" method="POST">
+          <label for="name">Nombre:</label>
+          <input type="text" id="name" name="name" required />
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required />
+          <label for="message">Mensaje:</label>
+          <textarea id="message" name="message" required></textarea>
+          <button type="submit">Enviar</button>
+        </form>
+      </div>
+      
+      <div class="map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3327.2581343600764!2d-70.76018112523506!3d-33.494660540908555!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662c3257950e56f%3A0x70adcf466a9b0bd3!2sCerro%20Primo%20de%20Rivera!5e0!3m2!1ses!2scl!4v1681145734296!5m2!1ses!2scl" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <script src="https://maps.googleapis.com/maps/api/js?key=TU_API_KEY&callback=initMap" async defer></script>
+        <script src="maps.js"></script>
+    
+      
+      </div>
+    </div>
+
+      
     </article>
 
     <!-- Footer -->
